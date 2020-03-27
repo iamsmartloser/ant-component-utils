@@ -1,0 +1,44 @@
+
+.ux-standard-tree {
+
+  //查询字体高亮显示
+  .high-light-title{
+    color: #f50;
+  }
+
+  .nameSuffix{
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.5);
+    margin-left: 16px;
+  }
+  :global {
+    .header-tool-box {
+      display: flex;
+      align-items: center;
+      position: relative;
+      button {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  //在有description的情况下才有这个样式
+  .tree-node-title{
+
+    .description{
+      font-size: 12px;
+      color:rgba(0, 0, 0, 0.5);
+    }
+
+    :global {
+      .ant-tree li .ant-tree-node-content-wrapper{
+        height: 42px;
+      }
+      .ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper::before, .ant-tree.ant-tree-directory
+      .ant-tree-child-tree > li span.ant-tree-node-content-wrapper::before {
+        height: 42px;
+      }
+    }
+  }
+
+}

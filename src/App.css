@@ -1,0 +1,21 @@
+.App {
+  /*display: flex;*/
+  /*flex-direction: row;*/
+   height: 100vh;
+ }
+
+.home-page{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.content-box{
+  flex: auto;
+  height: 100vh;
+  background: aquamarine;
+}
+
+
+
+
